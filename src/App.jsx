@@ -1,4 +1,6 @@
-import { Header } from "./components/Header/Header"
+import { Header } from "./components/Header"
+import { Sidebar } from "./components/Sidebar"
+import style from "./App.module.css"
 
 import "./global.css"
 
@@ -7,6 +9,12 @@ function App() {
   return (
     <>
       <Header />
+      <div className={style.wrapper}>
+        <Sidebar />
+        <main>
+          <div>Post 01</div>
+        </main>
+      </div>
     </>
   )
 }
